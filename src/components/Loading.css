@@ -1,0 +1,28 @@
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loading-line {
+    width: 100px;
+    height: 4px;
+    background-color: #1976d2; /* Customize the color as needed */
+    animation: loadingAnimation 1s ease-in-out infinite;
+  }
+  
+  @keyframes loadingAnimation {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
